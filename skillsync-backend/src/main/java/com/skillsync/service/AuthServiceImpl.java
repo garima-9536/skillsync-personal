@@ -10,7 +10,7 @@ import com.skillsync.utility.SkillSyncException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+// this layer is responsible for handling authentication-related operations, such as user registration and login. It interacts with the UsersRepository to perform database operations and uses PasswordEncoder for password hashing and JwtUtil for generating JWT tokens.
 @Service(value = "authService")
 @Transactional
 public class AuthServiceImpl implements AuthService {
