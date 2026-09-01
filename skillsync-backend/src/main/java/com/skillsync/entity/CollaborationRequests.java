@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
-
+// this layer ensures that the data is validated before it reaches the service layer, preventing any invalid data from being processed and potentially causing errors or inconsistencies in the application.
 @Entity
 @Table(name = "collaboration_requests")
 @Data
